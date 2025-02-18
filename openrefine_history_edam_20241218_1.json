@@ -1,0 +1,382 @@
+[
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "http://www.geneontology.org/formats/oboInOwl#inSubset",
+      "subject",
+      "http://www.w3.org/2000/01/rdf-schema#label",
+      "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "http://www.w3.org/2004/02/skos/core#broadMatch",
+      "http://www.w3.org/2004/02/skos/core#narrowMatch",
+      "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "http://www.w3.org/2004/02/skos/core#relatedMatch"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "expression": "value",
+          "columnName": "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "http://www.w3.org/2004/02/skos/core#broadMatch",
+          "expression": "value",
+          "columnName": "http://www.w3.org/2004/02/skos/core#broadMatch",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+          "expression": "value",
+          "columnName": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "expression": "value",
+          "columnName": "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "http://www.w3.org/2004/02/skos/core#relatedMatch",
+          "expression": "value",
+          "columnName": "http://www.w3.org/2004/02/skos/core#relatedMatch",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "http://www.w3.org/2004/02/skos/core#exactMatch",
+    "newColumnName": "exactMatch",
+    "description": "Rename column http://www.w3.org/2004/02/skos/core#exactMatch to exactMatch"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "http://www.w3.org/2004/02/skos/core#broadMatch",
+    "newColumnName": "broadMatch",
+    "description": "Rename column http://www.w3.org/2004/02/skos/core#broadMatch to broadMatch"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+    "newColumnName": "narrowMatch",
+    "description": "Rename column http://www.w3.org/2004/02/skos/core#narrowMatch to narrowMatch"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "http://www.w3.org/2004/02/skos/core#closeMatch",
+    "newColumnName": "closeMatch",
+    "description": "Rename column http://www.w3.org/2004/02/skos/core#closeMatch to closeMatch"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "http://www.w3.org/2004/02/skos/core#relatedMatch",
+    "newColumnName": "relatedMatch",
+    "description": "Rename column http://www.w3.org/2004/02/skos/core#relatedMatch to relatedMatch"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "subject",
+    "newColumnName": "ID",
+    "description": "Rename column subject to ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "http://www.w3.org/2000/01/rdf-schema#label",
+    "newColumnName": "label",
+    "description": "Rename column http://www.w3.org/2000/01/rdf-schema#label to label"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "http://www.geneontology.org/formats/oboInOwl#inSubset",
+    "newColumnName": "inSubset",
+    "description": "Rename column http://www.geneontology.org/formats/oboInOwl#inSubset to inSubset"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "ID",
+      "label",
+      "inSubset",
+      "exactMatch",
+      "broadMatch",
+      "narrowMatch",
+      "closeMatch",
+      "relatedMatch"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "exactMatch",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "copy of exactMatch",
+    "columnInsertIndex": 4,
+    "description": "Create column copy of exactMatch at index 4 based on column exactMatch using expression grel:value"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "copy of exactMatch",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column copy of exactMatch to type null"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "broadMatch",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "copy broadMatch",
+    "columnInsertIndex": 6,
+    "description": "Create column copy broadMatch at index 6 based on column broadMatch using expression grel:value"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "copy broadMatch",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column copy broadMatch to type null"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "narrowMatch",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "copy narrowMatch",
+    "columnInsertIndex": 8,
+    "description": "Create column copy narrowMatch at index 8 based on column narrowMatch using expression grel:value"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "copy narrowMatch",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column copy narrowMatch to type null"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "closeMatch",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "copy closeMatch",
+    "columnInsertIndex": 10,
+    "description": "Create column copy closeMatch at index 10 based on column closeMatch using expression grel:value"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "copy closeMatch",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column copy closeMatch to type null"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "relatedMatch",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "copy relatedMatch",
+    "columnInsertIndex": 12,
+    "description": "Create column copy relatedMatch at index 12 based on column relatedMatch using expression grel:value"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "copy relatedMatch",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column copy relatedMatch to type null"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "exactMatch",
+    "expression": "join ([coalesce(cells['exactMatch'].value,''),coalesce(cells['copy of exactMatch'].value,'')],'  ')",
+    "onError": "keep-original",
+    "newColumnName": "ems",
+    "columnInsertIndex": 4,
+    "description": "Create column ems at index 4 based on column exactMatch using expression join ([coalesce(cells['exactMatch'].value,''),coalesce(cells['copy of exactMatch'].value,'')],'  ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "copy broadMatch",
+    "description": "Remove column copy broadMatch"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "copy of exactMatch",
+    "endpoint": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "Label",
+          "name": null
+        }
+      ]
+    },
+    "columnInsertIndex": 6,
+    "description": "Extend data at index 6 based on column copy of exactMatch"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Label",
+    "description": "Remove column Label"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "copy of exactMatch",
+    "endpoint": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "P264",
+          "name": null,
+          "settings": {
+            "limit": "0",
+            "rank": "best",
+            "references": "referenced"
+          }
+        }
+      ]
+    },
+    "columnInsertIndex": 6,
+    "description": "Extend data at index 6 based on column copy of exactMatch"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "record label",
+    "description": "Remove column record label"
+  }
+]
