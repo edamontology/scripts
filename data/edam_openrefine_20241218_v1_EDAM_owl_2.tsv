@@ -1,0 +1,58 @@
+ID	label	inSubset	exactMatch	copy of exactMatch	broadMatch	copy broadMatch	narrowMatch	copy narrowMatch	closeMatch	copy closeMatch	relatedMatch	copy relatedMatch
+http://edamontology.org/topic_4012	FAIR data	http://edamontology.org/topics	https://www.wikidata.org/wiki/Q29032648	FAIR data					https://www.wikidata.org/wiki/Q309901	open data		
+http://edamontology.org/format_1915	Format	http://edamontology.org/formats			http://semanticscience.org/resource/SIO_000612	http://semanticscience.org/resource/SIO_000612					http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality	http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality
+		http://edamontology.org/bio			http://purl.org/dc/elements/1.1/format	http://purl.org/dc/elements/1.1/format					http://wsio.org/compression_004	http://wsio.org/compression_004
+					http://purl.obolibrary.org/obo/BFO_0000002	http://purl.obolibrary.org/obo/BFO_0000002					http://purl.obolibrary.org/obo/IAO_0000098	http://purl.obolibrary.org/obo/IAO_0000098
+					http://purl.org/biotop/biotop.owl#Quality	http://purl.org/biotop/biotop.owl#Quality					http://purl.obolibrary.org/obo/BFO_0000019	http://purl.obolibrary.org/obo/BFO_0000019
+					http://www.onto-med.de/ontologies/gfo.owl#Perpetuant	http://www.onto-med.de/ontologies/gfo.owl#Perpetuant					http://purl.org/biotop/biotop.owl#MachineLanguage	http://purl.org/biotop/biotop.owl#MachineLanguage
+					http://www.onto-med.de/ontologies/gfo.owl#Symbol_structure	http://www.onto-med.de/ontologies/gfo.owl#Symbol_structure					http://semanticscience.org/resource/SIO_000618	http://semanticscience.org/resource/SIO_000618
+http://edamontology.org/topic_4038	Metabarcoding	http://edamontology.org/bio	https://www.wikidata.org/wiki/Q51237016	metabarcoding							https://www.wikidata.org/wiki/Q25098939	environmental DNA
+http://edamontology.org/topic_0153	Lipidomics	http://edamontology.org/bio	https://www.wikidata.org/wiki/Q6556376	lipidomics								
+		http://edamontology.org/topics	http://id.nlm.nih.gov/mesh/D000081362	http://id.nlm.nih.gov/mesh/D000081362								
+http://edamontology.org/format_4041	maDMP	http://edamontology.org/formats	https://doi.org/10.25504/FAIRsharing.6e60e5	https://doi.org/10.25504/FAIRsharing.6e60e5								
+http://edamontology.org/is_topic_of	is topic of	http://edamontology.org/properties			http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in	http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in						
+http://edamontology.org/topic_4047	Software management	http://edamontology.org/bio									https://www.wikidata.org/wiki/Q947779	software project management
+http://edamontology.org/data_0006	Data	http://edamontology.org/data	http://wsio.org/data_002	http://wsio.org/data_002	http://purl.obolibrary.org/obo/IAO_0000030	http://purl.obolibrary.org/obo/IAO_0000030	http://purl.obolibrary.org/obo/IAO_0000027	http://purl.obolibrary.org/obo/IAO_0000027	http://semanticscience.org/resource/SIO_000069	http://semanticscience.org/resource/SIO_000069	http://semanticscience.org/resource/SIO_000088	http://semanticscience.org/resource/SIO_000088
+		http://edamontology.org/bio			http://www.onto-med.de/ontologies/gfo.owl#Perpetuant	http://www.onto-med.de/ontologies/gfo.owl#Perpetuant			http://purl.org/biotop/biotop.owl#DigitalEntity	http://purl.org/biotop/biotop.owl#DigitalEntity		
+					http://purl.obolibrary.org/obo/BFO_0000002	http://purl.obolibrary.org/obo/BFO_0000002						
+http://edamontology.org/operation_4043	Data digitisation	http://edamontology.org/bio	https://www.wikidata.org/wiki/Q843958	digitization							https://www.wikidata.org/wiki/Q632897	digital preservation
+http://edamontology.org/topic_4044	Data protection	http://edamontology.org/topics							https://www.wikidata.org/wiki/Q456632	information privacy	https://www.wikidata.org/wiki/Q1172506	General Data Protection Regulation
+		http://edamontology.org/bio							https://www.wikidata.org/wiki/Q2587068	sensitive information		
+http://edamontology.org/data_0842	Identifier	http://edamontology.org/bio	http://semanticscience.org/resource/SIO_000115	http://semanticscience.org/resource/SIO_000115			http://purl.org/dc/elements/1.1/identifier	http://purl.org/dc/elements/1.1/identifier				
+		http://edamontology.org/data	http://wsio.org/data_005	http://wsio.org/data_005								
+http://edamontology.org/topic_3071	Data management	http://edamontology.org/topics	http://purl.bioontology.org/ontology/MSH/D000079803	http://purl.bioontology.org/ontology/MSH/D000079803			https://www.wikidata.org/wiki/Q6822246	metadata management				
+		http://edamontology.org/bio	https://www.wikidata.org/wiki/Q1149776	data management			https://www.wikidata.org/wiki/Q30089794	research data management				
+http://edamontology.org/topic_4011	Data rescue	http://edamontology.org/topics	https://www.wikidata.org/wiki/Q29097553	Data rescue								
+http://edamontology.org/is_input_of	is input of	http://edamontology.org/properties	http://wsio.org/is_input_of	http://wsio.org/is_input_of					http://purl.obolibrary.org/obo/OBI_0000295	http://purl.obolibrary.org/obo/OBI_0000295		
+http://edamontology.org/data_4040	Data management plan	http://edamontology.org/bio	https://www.wikidata.org/wiki/Q17085509	data management plan								
+http://edamontology.org/topic_4046	Version control	http://edamontology.org/bio	https://www.wikidata.org/wiki/Q189439	version control								
+http://edamontology.org/topic_0219	Data curation and archival	http://edamontology.org/events	https://www.wikidata.org/wiki/Q48797981	data preservation			https://www.wikidata.org/wiki/Q17155735	research data archiving			https://www.wikidata.org/wiki/Q5227240	data library
+		http://edamontology.org/bio	https://www.wikidata.org/wiki/Q15088675	data curation								
+		http://edamontology.org/topics	https://www.wikidata.org/wiki/Q65769313	data archiving								
+http://edamontology.org/has_output	has output	http://edamontology.org/properties	http://wsio.org/has_output	http://wsio.org/has_output					http://purl.obolibrary.org/obo/OBI_0000299	http://purl.obolibrary.org/obo/OBI_0000299		
+http://edamontology.org/operation_3908	Information retrieval	http://edamontology.org/operations	https://www.wikidata.org/wiki/Q816826	information retrieval								
+http://edamontology.org/is_output_of	is output of	http://edamontology.org/properties	http://wsio.org/is_output_of	http://wsio.org/is_output_of					http://purl.obolibrary.org/obo/OBI_0000312	http://purl.obolibrary.org/obo/OBI_0000312		
+http://edamontology.org/has_function	has function	http://edamontology.org/properties	http://wsio.org/has_function	http://wsio.org/has_function	http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#has-quality	http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#has-quality			http://purl.obolibrary.org/obo/OBI_0000306	http://purl.obolibrary.org/obo/OBI_0000306		
+http://edamontology.org/is_function_of	is function of	http://edamontology.org/properties	http://wsio.org/is_function_of	http://wsio.org/is_function_of	http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in	http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in						
+http://edamontology.org/topic_0003	Topic	http://edamontology.org/bio			http://www.onto-med.de/ontologies/gfo.owl#Category	http://www.onto-med.de/ontologies/gfo.owl#Category			http://bioontology.org/ontologies/ResearchArea.owl#Area_of_Research	http://bioontology.org/ontologies/ResearchArea.owl#Area_of_Research	http://purl.org/biotop/biotop.owl#Quality	http://purl.org/biotop/biotop.owl#Quality
+		http://edamontology.org/topics			http://www.onto-med.de/ontologies/gfo.owl#Perpetuant	http://www.onto-med.de/ontologies/gfo.owl#Perpetuant					http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality	http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality
+					http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method	http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method					http://purl.obolibrary.org/obo/BFO_0000019	http://purl.obolibrary.org/obo/BFO_0000019
+					http://purl.obolibrary.org/obo/BFO_0000002	http://purl.obolibrary.org/obo/BFO_0000002						
+http://edamontology.org/has_format	has format	http://edamontology.org/properties			http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#has-quality	http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#has-quality						
+					http://purl.obolibrary.org/obo/OBI_0000298	http://purl.obolibrary.org/obo/OBI_0000298						
+http://edamontology.org/data_2099	Name	http://edamontology.org/identifiers			http://www.w3.org/2000/01/rdf-schema#label	http://www.w3.org/2000/01/rdf-schema#label						
+http://edamontology.org/topic_3174	Metagenomics	http://edamontology.org/bio	http://purl.bioontology.org/ontology/MSH/D056186	http://purl.bioontology.org/ontology/MSH/D056186								
+http://edamontology.org/is_format_of	is format of	http://edamontology.org/properties			http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in	http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in						
+http://edamontology.org/topic_4045	Cybersecurity	http://edamontology.org/bio					https://www.wikidata.org/wiki/Q3510521	computer security			https://www.wikidata.org/wiki/Q189900	information security
+		http://edamontology.org/topics					https://www.wikidata.org/wiki/Q899388	data security				
+http://edamontology.org/topic_3571	Data governance	http://edamontology.org/topics	https://www.wikidata.org/wiki/Q872685	data governance							https://www.wikidata.org/wiki/Q57450885	data stewardship
+		http://edamontology.org/bio									https://www.wikidata.org/wiki/Q1172231	data steward
+http://edamontology.org/has_input	has input	http://edamontology.org/properties	http://wsio.org/has_input	http://wsio.org/has_input					http://purl.obolibrary.org/obo/OBI_0000293	http://purl.obolibrary.org/obo/OBI_0000293		
+http://edamontology.org/operation_0004	Operation	http://edamontology.org/operations	http://wsio.org/operation_001	http://wsio.org/operation_001	http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method	http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method			http://semanticscience.org/resource/SIO_000649	http://semanticscience.org/resource/SIO_000649	http://purl.obolibrary.org/obo/BFO_0000034	http://purl.obolibrary.org/obo/BFO_0000034
+		http://edamontology.org/bio			http://www.onto-med.de/ontologies/gfo.owl#Perpetuant	http://www.onto-med.de/ontologies/gfo.owl#Perpetuant			http://www.ebi.ac.uk/swo/SWO_0000003	http://www.ebi.ac.uk/swo/SWO_0000003	http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality	http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality
+					http://purl.obolibrary.org/obo/BFO_0000002	http://purl.obolibrary.org/obo/BFO_0000002					http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#process	http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#process
+					http://purl.org/biotop/biotop.owl#Function	http://purl.org/biotop/biotop.owl#Function					http://purl.obolibrary.org/obo/BFO_0000019	http://purl.obolibrary.org/obo/BFO_0000019
+					http://www.onto-med.de/ontologies/gfo.owl#Function	http://www.onto-med.de/ontologies/gfo.owl#Function					http://purl.obolibrary.org/obo/BFO_0000015	http://purl.obolibrary.org/obo/BFO_0000015
+					http://semanticscience.org/resource/SIO_000017	http://semanticscience.org/resource/SIO_000017					http://www.onto-med.de/ontologies/gfo.owl#Process	http://www.onto-med.de/ontologies/gfo.owl#Process
+http://edamontology.org/topic_3077	Data acquisition	http://edamontology.org/bio	https://www.wikidata.org/wiki/Q1172399	data acquisition								
+		http://edamontology.org/topics	https://www.wikidata.org/wiki/Q4929239	data collection								

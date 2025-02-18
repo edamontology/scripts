@@ -2,12 +2,9 @@ import pandas as pan
 import numpy as np
 
 # This script uses a tsv file generated using OpenRefine from EDAM version 1.25.
-
-df = pan.read_csv("../data/edam_openrefine_20241218_v1/EDAM-owl(2).tsv", sep="\t")
-
+df = pan.read_csv("./data/edam_openrefine_20241218_v1_EDAM_owl_2.tsv", sep="\t")
 df = df.rename(columns={"copy of exactMatch": "copy exactMatch"})
-print(df.columns)
-
+# print(df.columns)
 
 def same_as_upper(col: pan.Series) -> pan.Series:
     """
@@ -57,9 +54,9 @@ for match_type in "exact broad narrow close related".split():
         columns=[match_type + "Match", "copy " + match_type + "Match"], inplace=True
     )
 
-print(df.head())
+# print(df.head())
 
-df.to_csv("../data/reformatted_matches_07.csv")
+df.to_csv("./data/reformatted_matches.csv")
 
 df["ID_filled"] = same_as_upper(df["ID"])
 df["label_filled"] = same_as_upper(df["label"])
@@ -77,20 +74,21 @@ df = df.melt(
     value_name=cname_mcl,
 )
 
-print("empty rows:", df[cname_mcl] == "")
+# print("empty rows:", df[cname_mcl] == "")
 dg = df[df[cname_mcl] != ""]
-print("dg", dg)
-print("dg size", dg.shape)
-dg.dropna(subset=[cname_mcl], inplace=True)
+# print("dg", dg)
+# print("dg size", dg.shape)
+# dg.dropna(subset=[cname_mcl], inplace=True)
+dg = dg.dropna(subset=[cname_mcl])
 dg = dg.sort_values(by="ID_filled")
-print(dg)
+# print(dg)
 dg["inSubset_sorted"] = dg["inSubset"]
 dg = dg.replace(to_replace="http://edamontology.org/bio", value="")
 dg = dg.sort_values(by=["ID_filled", "inSubset_sorted"], ascending=[True, False])
 
 dg["inSubset_filled"] = dg["inSubset_sorted"]
-print(dg.columns)
-print(len(dg))
+# print(dg.columns)
+# print(len(dg))
 dg.reset_index(inplace=True)
 for i in range(1, len(dg)):
     x = dg.loc[i, "inSubset_sorted"]
@@ -103,19 +101,19 @@ dg["ID_link_md"] = dg.apply(
     lambda x: "[`{}`]({})".format(x.ID_short, x.ID_filled), axis=1
 )
 dg = dg.sort_values(by=["ID_filled", cname_mcl], ascending=[True, True])
-dg.to_csv("../data/reformatted_matches_filled_12.csv")
+dg.to_csv("./data/reformatted_matches_filled.csv")
 
 dg = dg.dropna(subset=["Match type, Concept and Link"])
 indices_empty_rows = dg[dg["Match type, Concept and Link"] == ""].index
-print("  indices_empty_rows", indices_empty_rows)
+# print("  indices_empty_rows", indices_empty_rows)
 dg = dg.drop(index=indices_empty_rows)
 
-dg.to_csv("../data/reformatted_matches_filled_cleaned_12.csv")
+dg.to_csv("./data/reformatted_matches_filled_cleaned.csv")
 
-print(dg.columns)
+# print(dg.columns)
 dg["a"] = "|"
 dg["b"] = "|"
 dh = dg["a label_filled ID_link_md b ".split() + [cname_mcl] + ["b"]]
-dh.to_csv("../data/reformatted_matches_selected_columns_12.csv", index=False, sep=" ")
+dh.to_csv("./data/reformatted_matches_selected_columns.csv", index=False, sep=" ")
 
-print("done.")
+# print("done.")
